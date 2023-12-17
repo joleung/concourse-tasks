@@ -1,5 +1,4 @@
-#!/usr/bin/env bash
-set -eux
+#!//bin/sh
 echo "${CLOUDFLARE_INI}" > cloudflare.ini;
 chmod 600 cloudflare.ini;
 certbot certonly -n --dns-cloudflare \
