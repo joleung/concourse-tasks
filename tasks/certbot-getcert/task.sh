@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 set -eux
 echo "${CLOUDFLARE_INI}" > cloudflare.ini;
 chmod 600 cloudflare.ini;
