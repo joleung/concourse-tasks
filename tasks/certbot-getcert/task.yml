@@ -12,4 +12,4 @@ params:
   CERT_DOMAIN:
 
 run:
-  path: concourse-tasks/certbot-getcert/tash.sh
+  path: concourse-tasks/tasks/certbot-getcert/task.sh
