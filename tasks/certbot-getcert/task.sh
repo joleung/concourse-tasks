@@ -1,6 +1,6 @@
 #!//bin/sh
 ACME_SERVER=acme-v02.api.letsencrypt.org
-if [ -z "${STAGING}" ]; then
+if [ -n "${STAGING}" ]; then
   ACME_SERVER="acme-staging-v02.api.letsencrypt.org"
   echo "Using staging server ${ACME_SERVER}"
 fi
