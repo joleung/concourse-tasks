@@ -2,7 +2,7 @@
 ACME_SERVER=acme-v02.api.letsencrypt.org
 if [ -z "${STAGING}" ]; then
   ACME_SERVER="acme-staging-v02.api.letsencrypt.org"
-  echo "Using staging server ${ACME_SERVER};
+  echo "Using staging server ${ACME_SERVER}"
 fi
 
 echo "${CLOUDFLARE_INI}" > cloudflare.ini;
