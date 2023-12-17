@@ -10,6 +10,7 @@ outputs:
 params:
   CLOUDFLARE_INI:
   CERT_DOMAIN:
+  CERTBOT_EMAIL:
 
 run:
   path: concourse-tasks/tasks/certbot-getcert/task.sh
