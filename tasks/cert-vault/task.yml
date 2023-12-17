@@ -12,4 +12,4 @@ params:
   CERT_DOMAIN:
 
 run:
-  path: concourse-tasks/task/cert-vault/task.sh
+  path: concourse-tasks/tasks/cert-vault/task.sh
