@@ -1,0 +1,15 @@
+---
+platform: linux
+
+inputs:
+- name: concourse-tasks
+
+outputs:
+- name: certoutput
+
+params:
+  CLOUDFLARE_INI:
+  CERT_DOMAIN:
+
+run:
+  path: concourse-tasks/certbot-getcert/tash.sh
