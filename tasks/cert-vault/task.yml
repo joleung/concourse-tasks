@@ -4,12 +4,12 @@ platform: linux
 inputs:
 - name: concourse-tasks
 - name: certoutput
+- name: domaininfo
 
 params:
   VAULT_PATH:
   VAULT_TOKEN:
   VAULT_ADDR:
-  CERT_DOMAIN:
 
 run:
   path: concourse-tasks/tasks/cert-vault/task.sh
