@@ -3,15 +3,14 @@ platform: linux
 
 inputs:
 - name: concourse-tasks
+- name: domaininfo
 
 outputs:
 - name: certoutput
 
 params:
   CLOUDFLARE_INI:
-  CERT_DOMAINS:
   CERTBOT_EMAIL:
-  WILDCARD_CERT:
   STAGING:
 
 run:

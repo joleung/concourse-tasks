@@ -1,13 +1,14 @@
 #!/bin/bash
-IFS=', ' read -r -a DOMAIN_NAME <<< "${CERT_DOMAINS}"
+IFS=', ' read -r -a domain_name <<< "${CERT_DOMAINS}"
 
-DOMAIN_CERTBOT_PARAM=""
-for d0 in ${DOMAIN_NAME[@]}
+domain_cert_param=""
+for d0 in ${domain_name[@]}
 do
   dp=" -d \"${d0}\" "
   if "${WILDCARD_CERT}"; then
     dp+=" -d \"*.${d0}\" "
   fi
-  DOMAIN_CERTBOT_PARAM="${DOMAIN_CERTBOT_PARAM} ${dp}";
+  domain_cert_param="${domain_cert_param} ${dp}";
 done
-echo ${DOMAIN_CERTBOT_PARAM} > domaininfo/domain_params.txt
+echo ${domain_cert_param} > domaininfo/domain_params.txt
+echo ${domain_name[0]} > domaininfo/firstdomain.txt

@@ -9,6 +9,7 @@ outputs:
 
 params:
   CERT_DOMAINS:
+  WILDCARD_CERT:
 
 run:
   path: concourse-tasks/tasks/certbot-getcert/prepare.sh
