@@ -1,0 +1,14 @@
+---
+platform: linux
+
+inputs:
+- name: concourse-tasks
+
+outputs:
+- name: domaininfo
+
+params:
+  CERT_DOMAINS:
+
+run:
+  path: concourse-tasks/tasks/certbot-getcert/prepare.sh
