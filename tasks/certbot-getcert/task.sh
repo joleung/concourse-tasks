@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # Production server
 acme_server=acme-v02.api.letsencrypt.org
 if "${STAGING}"; then
